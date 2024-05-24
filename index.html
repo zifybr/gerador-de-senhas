@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box-title">
+      <i class="icon-lock"></i>
+      <h1>GERADOR DE SENHAS</h1>
+    </div>
+    <div class="box-password">
+      <input type="text" id="password-input" placeholder="Clique no botão para gerar uma senha"  disabled />
+      <button id="copy" disabled><i class="icon-copy"></i></button>
+    </div>
+    <div class="box-range">
+      <label>Quantidade de caracteres (<span id="characters">8</span>)</label>
+      <input type="range" min="6" max="18" step="1" value="8" id="quantity" />
+    </div>
+    <div class="box-options">
+      <div class="box-checkbox">
+        <input type="checkbox" checked id="uppercases" />
+        <label for="uppercases">Incluir letras maiúsculas</label>
+      </div>
+      <div class="box-checkbox">
+        <input type="checkbox" checked id="lowercases" />
+        <label for="lowercases">Incluir letras minúsculas</label>
+      </div>
+      <div class="box-checkbox">
+        <input type="checkbox" checked id="numbers" />
+        <label for="numbers">Incluir números</label>
+      </div>
+      <div class="box-checkbox">
+        <input type="checkbox" checked id="specials" />
+        <label for="specials">Incluir caracteres especiais</label>
+      </div>
+    </div>
+    <div class="box-button">
+      <button id="button-new-password">GERAR SENHA</button>
+    </div>
+  </div>
+</body>
+
+</html>
+<script src="index.js"></script>
